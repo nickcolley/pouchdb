@@ -4,9 +4,11 @@
   "license": "MIT",
   "scripts": {
     "start": "eleventy --serve",
-    "build": "eleventy"
+    "build": "eleventy",
+    "build:css": "mkdir -p _site/static/css/ && lessc static/less/pouchdb/pouchdb.less > _site/static/css/pouchdb.css"
   },
   "dependencies": {
+    "less": "3.9.0",
     "@11ty/eleventy": "^0.11.0"
   }
 }
