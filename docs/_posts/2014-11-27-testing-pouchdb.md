@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: layout/post.html
 
 title: How we test PouchDB
 

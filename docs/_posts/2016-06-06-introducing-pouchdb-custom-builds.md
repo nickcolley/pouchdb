@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: layout/post.html
 
 title: Introducing PouchDB custom builds
 author: Nolan Lawson

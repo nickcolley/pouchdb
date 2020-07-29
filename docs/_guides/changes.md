@@ -1,6 +1,6 @@
 ---
 index: 12
-layout: guide
+layout: layout/guide.html
 title: Changes feed
 sidebar: guides_nav.html
 ---

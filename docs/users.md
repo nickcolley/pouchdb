@@ -1,5 +1,5 @@
 ---
-layout: 2ColLeft
+layout: layout/2ColLeft.html
 title: Who's using PouchDB?
 sidebar: nav.html
 ---

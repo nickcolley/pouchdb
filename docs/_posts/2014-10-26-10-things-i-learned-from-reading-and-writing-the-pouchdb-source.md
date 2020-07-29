@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: layout/post.html
 
 title: 10 things I learned from reading (and writing) the PouchDB source
 

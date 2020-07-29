@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: layout/post.html
 
 title: We have a problem with promises
 author: Nolan Lawson

@@ -1,6 +1,6 @@
 ---
 index: 4
-layout: guide
+layout: layout/guide.html
 title: Working with databases
 sidebar: guides_nav.html
 ---

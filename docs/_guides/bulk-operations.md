@@ -1,6 +1,6 @@
 ---
 index: 8
-layout: guide
+layout: layout/guide.html
 title: Bulk operations
 sidebar: guides_nav.html
 ---

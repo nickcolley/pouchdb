@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: layout/post.html
 
 title: PouchDB 3.3.1&#58; A quick one while he's away
 author: Nolan Lawson
