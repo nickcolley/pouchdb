@@ -1,7 +1,7 @@
 ---
 layout: layout/2ColLeft.html
 title: Getting Started Guide
-sidebar: nav.html
+sidebar:  nav
 ---
 
 {% include alert/start.html variant="info" %}

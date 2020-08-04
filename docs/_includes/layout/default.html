@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ page.title }}</title>
+    <title>{{ title }}</title>
     <link rel="alternate" title="{{ site.description }}" type="application/rss+xml" href="/feed.xml">
     <link rel="stylesheet" href="{{ site.baseurl }}/static/css/pouchdb.css" />
     <meta name="theme-color" content="#6ccb99">
@@ -50,13 +50,13 @@
             <a class='btn btn-link btn-lg' href="{{ site.baseurl }}/guides/">Guides</a>
           </li>
           <li>
-            <a class='btn btn-link btn-lg' href="{{ site.baseurl }}/api.html">API</a>
+            <a class='btn btn-link btn-lg' href="{{ site.baseurl }}/api/">API</a>
           </li>
           <li>
-            <a class='btn btn-link btn-lg' href="{{ site.baseurl }}/learn.html">Learn</a>
+            <a class='btn btn-link btn-lg' href="{{ site.baseurl }}/learn/">Learn</a>
           </li>
           <li>
-            <a class='btn btn-primary btn-lg' href="{{ site.baseurl }}/download.html">Download <strong>v{{ site.version }}</strong></a>
+            <a class='btn btn-primary btn-lg' href="{{ site.baseurl }}/download/">Download <strong>v{{ site.version }}</strong></a>
           </li>
         </ul>
 
@@ -68,14 +68,14 @@
 
         <div class="container">
 
-          <h1 class="margin-bottom-none">{{ page.title }}</h1>
-          {% if page.edit != false %}
+          <h1 class="margin-bottom-none">{{ title }}</h1>
+          {% if edit != false %}
             <span class="h1 margin-bottom-none">
               {% include edit_button.html %}
             </span>
           {% endif %}
-          {% if page.sub_title %}
-            <h4>{{ page.sub_title}}</h4>
+          {% if sub_title %}
+            <h4>{{ sub_title}}</h4>
           {% endif %}
 
         </div>

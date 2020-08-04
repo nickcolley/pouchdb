@@ -1,7 +1,7 @@
 ---
 layout: layout/2ColLeft.html
 title: Plugins and External Projects
-sidebar: nav.html
+sidebar:  nav
 ---
 
 Below is a list of known plugins, tools and projects can be used with PouchDB.

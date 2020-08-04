@@ -1,7 +1,7 @@
 ---
 layout: layout/2ColLeft.html
 title: Common Errors
-sidebar: nav.html
+sidebar:  nav
 ---
 
 {% include anchor.html class="h3" title="No 'Access-Control-Allow-Origin' header" hash="no_access_control_allow_origin_header" %}

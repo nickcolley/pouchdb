@@ -1,7 +1,7 @@
 ---
 layout: layout/2ColLeft.html
 title: Who's using PouchDB?
-sidebar: nav.html
+sidebar:  nav
 ---
 
 A list of known products and services that are using PouchDB.

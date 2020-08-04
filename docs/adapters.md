@@ -1,7 +1,7 @@
 ---
 layout: layout/2ColLeft.html
 title: Adapters
-sidebar: nav.html
+sidebar:  nav
 ---
 
 PouchDB is not a self-contained database; it is a CouchDB-style abstraction layer over other databases. By default, PouchDB ships with the [IndexedDB][] adapter for the browser, and a [LevelDB][] adapter in Node.js. This can be visualized as so:

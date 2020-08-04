@@ -1,7 +1,7 @@
 ---
 layout: layout/2ColLeft.html
 title: Download
-sidebar: nav.html
+sidebar:  nav
 ---
 
 {% include anchor.html class="h3" title="Quick Start" hash="file" %}

@@ -1,4 +1,4 @@
-module.exports = function(eleventyConfig) {
+module.exports = eleventyConfig => {
     // Allow assets e.g. images, css to be accessed
     eleventyConfig.addPassthroughCopy('static')
 
@@ -8,6 +8,16 @@ module.exports = function(eleventyConfig) {
         };
     });
     eleventyConfig.addLiquidTag('endhighlight', () => {
+        return {
+            render: () => ''
+        };
+    });
+    eleventyConfig.addLiquidTag('markdown', () => {
+        return {
+            render: () => ''
+        };
+    });
+    eleventyConfig.addLiquidTag('endmarkdown', () => {
         return {
             render: () => ''
         };

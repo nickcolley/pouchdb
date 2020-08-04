@@ -1,7 +1,7 @@
 ---
 layout: layout/2ColLeft.html
 title: FAQ
-sidebar: nav.html
+sidebar:  nav
 ---
 
 {% include anchor.html class="h3" title="Can PouchDB sync with MongoDB/MySQL/my current non-CouchDB database?" hash="sync_non_couchdb" %}

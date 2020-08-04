@@ -120,13 +120,12 @@ db.replicate.to('http://example.com/mydb');
     <h3>Latest</h3>
 
         <div class="row">
-
-{% for post in site.posts limit:2 %}
+{% for post in collections.post limit:2 %}
 
 <div class="col-md-6">
 
 
-  <p class="margin-bottom-none"><a class='h4' href='{{ site.baseurl }}{{ post.url }}'>{{ post.title }}</a></p>
+  <p class="margin-bottom-none"><a class='h4' href='{{ post.url | url }}'>{{ post.data.title }}</a></p>
 
 {% include post_details.html %}
 

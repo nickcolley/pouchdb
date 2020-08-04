@@ -7,7 +7,13 @@ layout: layout/default.html
     <div class="row">
         <div id="sidebar" class="col-sm-3 nav-sidebar-wrapper">
           <ul class="nav nav-silent nav-sidebar" role="navigation">
-            {% include {{page.sidebar}} %}
+            {% if sidebar == 'api' %}
+              {% include api.html %}
+            {% elsif sidebar == 'guides_nav' %}
+              {% include guides_nav.html %}
+            {% elsif sidebar == 'nav' %}
+              {% include nav.html %}
+            {% endif %}
           </ul>
         </div>
 

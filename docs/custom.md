@@ -1,7 +1,7 @@
 ---
 layout: layout/2ColLeft.html
 title: Custom Builds
-sidebar: nav.html
+sidebar:  nav
 ---
 
 PouchDB supports custom builds, meaning you can pick and choose the features of

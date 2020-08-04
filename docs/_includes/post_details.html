@@ -2,14 +2,14 @@
   {% assign post = page %}
 {% endunless %}
 
-{% assign post_author = post.author %}
+{% assign post_author = post.data.author %}
 {% assign post_gravatar = 'https://www.fillmurray.com/82/82' %}
 {% assign modified_date = '' %}
 
-{% for author in site.data.authors %}
-  {% if author.name == post.author %}
+{% for author in authors %}
+  {% if author.name == post.data.author %}
     {% if author.twitter %}
-      {% capture post_author %}<a href="https://twitter.com/{{author.twitter}}">{{ post.author }}</a>{% endcapture %}
+      {% capture post_author %}<a href="https://twitter.com/{{author.twitter}}">{{ post.data.author }}</a>{% endcapture %}
     {% endif %}
     {% if author.gravatar %}
       {% capture post_gravatar %}https://gravatar.com/avatar/{{ author.gravatar }}{% endcapture %}
@@ -24,14 +24,14 @@
 <div class="post">
   <div class="media">
     <a class="pull-left" href="#">
-    <img class="media-object img-circle img-responsive" src='{{ post_gravatar }}' alt='{{ post.author }}'>
+    <img class="media-object img-circle img-responsive" src='{{ post_gravatar }}' alt='{{ post.data.author }}'>
     </a>
     <div class="media-body">
     <p>
       <strong>By:</strong> {{ post_author }}<br>
-      <strong>Published:</strong> {{ post.date | date_to_long_string }}<br>
+      <strong>Published:</strong> {{ post.date | date: "%d %B %Y" }}<br>
       {% if page.url == "/blog/" or page.url contains "/blog/page" or page.url == "/" %}
-        {{ post.excerpt | strip_html | truncatewords: 30, '' }}
+        {{ post.templateContent | strip_html | truncatewords: 30, '' }}
         <a href='{{ site.baseurl }}{{ post.url }}'>[...]</a>
       {% endif %}
     </p>

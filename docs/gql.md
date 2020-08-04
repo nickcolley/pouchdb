@@ -1,7 +1,7 @@
 ---
 layout: layout/2ColLeft.html
 title: GQL Documentation
-sidebar: nav.html
+sidebar:  nav
 ---
 
 The Google Query Language (GQL) interface provides an alternative method for accessing data.
